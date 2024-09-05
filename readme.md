@@ -1,0 +1,1 @@
+This Html file is a simple basic lay-out which i built because i was bored and in the train, i used Grid cause jan told me i should look into it, and i used flex for the same reason. i also added some @media querrys to make the site responsive. 
