@@ -1,6 +1,6 @@
 html, body{
     min-width: 199px;
-    overflow-y: auto; /*this is the overflow for the y axis of the html*/
+    overflow-y: hidden; /*this is the overflow for the y axis of the html*/
 
 
 }
