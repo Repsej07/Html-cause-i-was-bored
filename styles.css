@@ -57,7 +57,7 @@ html{
     .container { /*these are the rules for the main container if the width of the screen gets below 615px*/
     row-gap: 0px; /*sets the row gap to 0 cause otherwise there would have been a gap between item 5 and item 6*/
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
-    grid-template-rows: 1cm 1fr 1fr 1fr 2cm 7em ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
+    grid-template-rows: 1cm 1fr 1fr 1fr 2cm 6em ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
     grid-template-areas:  /*sets the areas of the grid to the following*/
     "header header header header header" /*this is the first row of the grid*/
     "sidebar1 sidebar1 sidebar1 sidebar1 sidebar1"  /*this is the second row of the grid*/
