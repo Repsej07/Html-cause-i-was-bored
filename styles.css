@@ -1,26 +1,18 @@
 html{
-    overflow: x;
-
+    overflow-y: auto; /*this is the overflow for the y axis of the html*/
+    overflow-x: hidden; /*this is the overflow for the x axis of the html*/
 
 
 }
 .container{/*this is the class for the main grid container*/
-    display: grid;
-    row-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1cm 2fr 1cm;
-    grid-template-areas: 
-    "header header header header header"
-    "sidebar1 main main  main sidebar2"
-    "logo logo footer footer footer";
-    display: grid;
-    row-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1cm 2fr 1cm;
-    grid-template-areas: 
-    "header header header header header"
-    "sidebar1 main main  main sidebar2"
-    "logo logo footer footer footer";
+    display: grid; /*makes the container a grid*/
+    row-gap: 10px; /*sets the gap between the rows to 10px*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
+    grid-template-rows: 1cm 2fr 1cm; /*sets the rows of the grid to 1cm 2fr 1cm*/
+    grid-template-areas:  
+    "header header header header header" /*sets the areas of the grid to the following*/
+    "sidebar1 main main  main sidebar2" /*sets the areas of the grid to the following*/
+    "logo logo footer footer footer"; /*sets the areas of the grid to the following*/
 }
 
 .item-1{/*these are the different stylings i have used for item 1*/
