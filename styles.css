@@ -4,80 +4,80 @@ html{
 
 
 }
-.container{
-display: grid;
-row-gap: 10px;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1cm 2fr 1cm;
-grid-template-areas: 
-"header header header header header"
-"sidebar1 main main  main sidebar2"
-"logo logo footer footer footer"
-;
+.container{/*this is the class for the main grid container*/
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1cm 2fr 1cm;
+    grid-template-areas: 
+    "header header header header header"
+    "sidebar1 main main  main sidebar2"
+    "logo logo footer footer footer";
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1cm 2fr 1cm;
+    grid-template-areas: 
+    "header header header header header"
+    "sidebar1 main main  main sidebar2"
+    "logo logo footer footer footer";
 }
 
-.item-1{
-grid-area: header;
-background-color: #4caf50;
-display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px;
-    row-gap: 10px;
+.item-1{/*these are the different stylings i have used for item 1*/
+    grid-area: header;/*this defines which area of the grid "item-1" will use*/
+    display: flex; /*makes the item display as flex-box*/
+    justify-content: space-between; /*aligns the items in the flex-box to the right and left*/
+    background-color: #4caf50; /*background color of the item*/
+    align-items: center; /*aligns the items in the flex-box to the center*/
 }
-.item-2{
-    grid-area: sidebar1;
-    background-color: #f4f4f4;
-    margin-right: 10px;
+ 
+
+    .item-2{ /*these are the different stylings i have used for item 2*/
+    grid-area: sidebar1; /*this defines which area of the grid "item-2" will use*/
+    background-color: #f4f4f4; /*background color of the item*/
+    margin-right: 10px; /*margin to the right of the item cause i couldnt use the gap feature anymore*/
 }
 .item-3{
-    grid-area: main;
-    background-color: #e4e4e4;
-    margin-right: 10px;
+    grid-area: main; /*this defines which area of the grid "item-3" will use*/
+    background-color: #e4e4e4; /*background color of the item*/
+    margin-right: 10px; /*margin to the right of the item cause i couldnt use the gap feature anymore*/
    
 }
-.item-4{
-    grid-area: sidebar2;
-    background-color: #f4f4f4;
+.item-4{  /*these are the different stylings i have used for item 4*/
+    grid-area: sidebar2; /*this defines which area of the grid "item-4" will use*/
+    background-color: #f4f4f4; /*background color of the item*/
 
 }
-.item-5{
-    grid-area: logo;
-    background-color: #4caf50;
-    display: flex;
-    align-items: center;
-    padding: 5px;
+.item-5{ /*these are the different stylings i have used for item 5*/
+    grid-area: logo; /*this defines which area of the grid "item-5" will use*/
+    background-color: #4caf50; /*background color of the item*/
+    display: flex; /*makes the item display as flex-box*/
+    align-items: center; /*aligns the items in the flex-box to the center*/
 }
 .item-6{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-area: footer;
-    background-color: #4caf50;
+    display: flex; /*makes the item display as flex-box*/
+    justify-content: space-between; /*aligns the items in the flex-box to the right and left*/
+    align-items: center; /*aligns the items in the flex-box to the center*/
+    grid-area: footer; /*this defines which area of the grid "item-6" will use*/
+    background-color: #4caf50; /*background color of the item*/
 }
-@media screen and (max-width: 615px) {
-    .container {
-        row-gap: 0px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1cm 1fr 1fr 1fr 2cm 2cm ;
-grid-template-areas: 
-"header header header header header"
-"sidebar1 sidebar1 sidebar1 sidebar1 sidebar1"
-"main main main main main"
-"sidebar2 sidebar2 sidebar2 sidebar2 sidebar2"
-"logo logo logo logo logo"
-"footer footer footer footer footer"
+@media screen and (max-width: 615px) { /*this is the media query for the smoller devices*/
+    .container { /*these are the rules for the main container if the width of the screen gets below 615px*/
+        row-gap: 0px; /*sets the row gap to 0 cause otherwise there would have been a gap between item 5 and item 6*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
+    grid-template-rows: 1cm 1fr 1fr 1fr 2cm 2cm ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
+    grid-template-areas:  /*sets the areas of the grid to the following*/
+    "header header header header header" /*this is the first row of the grid*/
+    "sidebar1 sidebar1 sidebar1 sidebar1 sidebar1"  /*this is the second row of the grid*/
+    "main main main main main" /*this is the third row of the grid*/
+    "sidebar2 sidebar2 sidebar2 sidebar2 sidebar2" /*this is the fourth row of the grid*/
+    "logo logo logo logo logo" /*this is the fifth row of the grid*/
+    "footer footer footer footer footer" /*this is the sixth row of the grid*/
     }
-  }
-@media (max-width: 615px) {
-   .item-2, .item-3, .item-4, .item-5{
-        margin-top: 10px;
-}
-}
-  @media (max-width: 615px) {
-	.item-5, .item-6 {
-		display: flex;
-		justify-content: center;
-        align-items: center;
-	}
+    .item-2, .item-3, .item-4{
+        margin-top: 10px;   /*these are the rules for the items 2, 3 and 4 if the width of the screen gets below 615px*/
+    } /*this is the media query for the smoller devices*/
+        .item-5 { /*these are the rules for the items 5 if the width of the screen gets below 615px*/
+            justify-content: center; /*aligns the items in the flex-box to the center*/
+        }
 }
