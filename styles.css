@@ -55,8 +55,8 @@ html{
 }
 @media screen and (max-width: 615px) { /*this is the media query for the smoller devices*/
     .container { /*these are the rules for the main container if the width of the screen gets below 615px*/
-        row-gap: 0px; /*sets the row gap to 0 cause otherwise there would have been a gap between item 5 and item 6*/
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
+    row-gap: 0px; /*sets the row gap to 0 cause otherwise there would have been a gap between item 5 and item 6*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
     grid-template-rows: 1cm 1fr 1fr 1fr 2cm 2cm ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
     grid-template-areas:  /*sets the areas of the grid to the following*/
     "header header header header header" /*this is the first row of the grid*/
@@ -66,7 +66,7 @@ html{
     "logo logo logo logo logo" /*this is the fifth row of the grid*/
     "footer footer footer footer footer" /*this is the sixth row of the grid*/
     }
-    .item-2, .item-3, .item-4{
+    .item-2, .item-3, .item-4, .item-5{
         margin-top: 10px;   /*these are the rules for the items 2, 3 and 4 if the width of the screen gets below 615px*/
     } /*this is the media query for the smoller devices*/
         .item-5 { /*these are the rules for the items 5 if the width of the screen gets below 615px*/
