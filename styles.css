@@ -57,7 +57,7 @@ html{
     .container { /*these are the rules for the main container if the width of the screen gets below 615px*/
     row-gap: 0px; /*sets the row gap to 0 cause otherwise there would have been a gap between item 5 and item 6*/
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
-    grid-template-rows: 1cm 1fr 1fr 1fr 2cm 2cm ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
+    grid-template-rows: 1cm 1fr 1fr 1fr 2cm 7em ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
     grid-template-areas:  /*sets the areas of the grid to the following*/
     "header header header header header" /*this is the first row of the grid*/
     "sidebar1 sidebar1 sidebar1 sidebar1 sidebar1"  /*this is the second row of the grid*/
@@ -72,4 +72,7 @@ html{
         .item-5 { /*these are the rules for the items 5 if the width of the screen gets below 615px*/
             justify-content: center; /*aligns the items in the flex-box to the center*/
         }
+    .item-6{
+       flex-direction: column; /*makes sure that the <p> tags in item-6 stack on top of eachother instead of next to eacother*/
+    }
 }
