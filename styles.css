@@ -1,6 +1,6 @@
-html{
+html, body{
+    min-width: 199px;
     overflow-y: auto; /*this is the overflow for the y axis of the html*/
-    overflow-x: hidden; /*this is the overflow for the x axis of the html*/
 
 
 }
@@ -14,7 +14,6 @@ html{
     "sidebar1 main main  main sidebar2" /*sets the areas of the grid to the following*/
     "logo logo footer footer footer"; /*sets the areas of the grid to the following*/
 }
-
 .item-1{/*these are the different stylings i have used for item 1*/
     grid-area: header;/*this defines which area of the grid "item-1" will use*/
     display: flex; /*makes the item display as flex-box*/
@@ -68,7 +67,7 @@ html{
     }
     .item-2, .item-3, .item-4, .item-5{
         margin-top: 10px;   /*these are the rules for the items 2, 3 and 4 if the width of the screen gets below 615px*/
-    } /*this is the media query for the smoller devices*/
+    }
         .item-5 { /*these are the rules for the items 5 if the width of the screen gets below 615px*/
             justify-content: center; /*aligns the items in the flex-box to the center*/
         }
