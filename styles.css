@@ -4,10 +4,11 @@ body {
     margin: 0;
 }
 .container{/*this is the class for the main grid container*/
+    padding: 1vh;
     display: grid; /*makes the container a grid*/
     row-gap: 10px; /*sets the gap between the rows to 10px*/
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
-    grid-template-rows: 10vh 80vh 10vh; /*sets the rows of the grid to 1cm 2fr 1cm*/
+    grid-template-rows: 8vh 80vh 8vh; /*sets the rows of the grid to 1cm 2fr 1cm*/
     grid-template-areas:  
     "header header header header header" /*sets the areas of the grid to the following*/
     "sidebar1 main main  main sidebar2" /*sets the areas of the grid to the following*/
@@ -24,10 +25,11 @@ header{/*these are the different stylings i have used for item 1*/
     align-items: center; /*aligns the items in the flex-box to the center*/
 }
 a{
-    margin-right: 10px; /*margin for the nav links temporarly*/ 
-    border-top: 2px solid black; /*border for the nav links temporarly*/
+    padding: 5px; /*margin for the nav links temporarly*/ 
+    border: 2px solid black; /*border for the nav links temporarly*/
     border-radius: 1px;
     text-decoration: none;
+    color: white;
     }
 a:hover{
         background-color: white;
@@ -51,13 +53,13 @@ h1{
 }
 aside{
     border: 2px solid black; /*border for the aside*/
-    margin-right: 10px;
     background-color: #f4f4f4;
 }
-.item-2, .item-3{
-border: 10px solid black; /*border for the items 2 and 3*/
-border-radius: 5px;
-
+main{
+    border: 2px solid black; /*border for the main*/
+    margin-right: 10px;
+    background-color: #f4f4f4;
+    margin-left: 10px;
 
 }
 
@@ -75,31 +77,35 @@ footer{ /*these are the different stylings i have used for item 5*/
     align-items: center;
 }
 
+i{
+padding: 1vw;
+
+}
 @media screen and (max-width: 615px) { /*this is the media query for the smoller devices*/
-    *{
-        overflow: visible;
+    html{
+    overflow-y: scroll;
     }
     .container { /*these are the rules for the main container if the width of the screen gets below 615px*/
     row-gap: 0px; /*sets the row gap to 0 cause otherwise there would have been a gap between item 5 and item 6*/
     font-size: 1em;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
-    grid-template-rows: 5vh 50vh 50vh 50vh 5vh 13vh ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
+    grid-template-rows: 5vh 50vh 50vh 50vh 20vh  ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
     grid-template-areas:  /*sets the areas of the grid to the following*/
     "header header header header header" /*this is the first row of the grid*/
     "sidebar1 sidebar1 sidebar1 sidebar1 sidebar1"  /*this is the second row of the grid*/
     "main main main main main" /*this is the third row of the grid*/
     "sidebar2 sidebar2 sidebar2 sidebar2 sidebar2" /*this is the fourth row of the grid*/
-    "logo logo logo logo logo" /*this is the fifth row of the grid*/
-    "footer footer footer footer footer" /*this is the sixth row of the grid*/
+    "footer footer footer footer footer" /*this is the fifth row of the grid*/ 
     }
 .item-2, .item-3, .item-4, .item-5{
-        margin-top: 10px;   /*these are the rules for the items 2, 3 and 4 if the width of the screen gets below 615px*/
+        margin-top: 1vh;   /*these are the rules for the items 2, 3 and 4 if the width of the screen gets below 615px*/
     }
-.item-5 { /*these are the rules for the items 5 if the width of the screen gets below 615px*/
-            justify-content: center; /*aligns the items in the flex-box to the center*/
-        }
-.item-6{
-       flex-direction: column; /*makes sure that the <p> tags in item-6 stack on top of eachother instead of next to eacother*/
-       margin-top: 0;
-    }
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+
+
+}
+
 }
