@@ -41,7 +41,6 @@ h1{
 .item-3{
     grid-area: main; /*this defines which area of the grid "item-3" will use*/
     background-color: #e4e4e4; /*background color of the item*/
-    margin-right: 10px; /*margin to the right of the item cause i couldnt use the gap feature anymore*/
 
    
 }
@@ -57,9 +56,7 @@ aside{
 }
 main{
     border: 2px solid black; /*border for the main*/
-    margin-right: 10px;
     background-color: #f4f4f4;
-    margin-left: 10px;
 
 }
 
