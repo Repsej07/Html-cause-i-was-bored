@@ -24,6 +24,9 @@ header{/*these are the different stylings i have used for item 1*/
     background-color: #4caf50; /*background color of the item*/
     align-items: center; /*aligns the items in the flex-box to the center*/
 }
+nav{
+    padding-right: 10px;
+}
 a{
     padding: 5px; /*margin for the nav links temporarly*/ 
     border: 2px solid black; /*border for the nav links temporarly*/
@@ -33,6 +36,8 @@ a{
     }
 a:hover{
         background-color: white;
+        color: black;
+        box-shadow: 1px 1px 1px 1px black;
     }
 h1{
     margin-left: 5px; 
@@ -46,17 +51,17 @@ h1{
 }
 .item-2{ /*these are the different stylings i have used for item 2*/
     grid-area: sidebar1; /*this defines which area of the grid "item-2" will use*/
-    background-color: #ff0000; /*background color of the item*/
+    background-color: #f4f4f4; /*background color of the item*/
      /*margin to the right of the item cause i couldnt use the gap feature anymore*/
 
 }
 aside{
-    border: 2px solid black; /*border for the aside*/
     background-color: #f4f4f4;
 }
 main{
-    border: 2px solid black; /*border for the main*/
     background-color: #f4f4f4;
+    margin-left: 1vw;
+    margin-right: 1vw;
 
 }
 
@@ -86,7 +91,7 @@ padding: 1vw;
     row-gap: 0px; /*sets the row gap to 0 cause otherwise there would have been a gap between item 5 and item 6*/
     font-size: 1em;
     grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
-    grid-template-rows: 5vh 50vh 50vh 50vh 20vh  ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
+    grid-template-rows: 5vh 60vh 80vh 60vh 20vh  ;   /*sets the rows of the grid to 1cm 1fr 1fr 1fr 2cm 2cm*/
     grid-template-areas:  /*sets the areas of the grid to the following*/
     "header header header header header" /*this is the first row of the grid*/
     "sidebar1 sidebar1 sidebar1 sidebar1 sidebar1"  /*this is the second row of the grid*/
@@ -97,12 +102,18 @@ padding: 1vw;
 .item-2, .item-3, .item-4, .item-5{
         margin-top: 1vh;   /*these are the rules for the items 2, 3 and 4 if the width of the screen gets below 615px*/
     }
+    main{
+        margin-left: 0vw;
+        margin-right: 0vw;
+
+    }
 footer{
     display: flex;
     flex-direction: column;
     margin-top: 1vh;
-
+}
+.footeritms{
+    padding-top: 10px;
 
 }
-
 }
