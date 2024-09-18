@@ -7,6 +7,7 @@
       src="https://kit.fontawesome.com/8107febab7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
     <!--in the head i have the normal viewport meta tag, the css stylesheet ofcourse, and a fontawesome script for the icons-->
   </head>
   <body>
@@ -16,6 +17,7 @@
       <header>
         <!--this is the first item in the grid which hold the header and the nav-bar-->
         <i class="fa-solid fa-cat"></i>
+        <div id="lang">English</div>
         <nav>
           <a
             href="home.html"
@@ -28,6 +30,7 @@
           >
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
+          <button type="button" onclick="myFunction()">switch language</button>
         </nav>
       </header>
 
@@ -59,7 +62,8 @@
       </aside>
 
       <main class="item-3">
-        <h1>Main content</h1>
+        <h1 id="main">Main content</h1>
+        
         <!--this is the third item in the grid which holds the main content window-->
         <p style="margin-left: 5px">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut
@@ -79,7 +83,7 @@
 
       <aside class="item-4">
         <!--this is the fourth item in the grid which holds sidebar 2, so the sidebar on the right-->
-        <h1>Events lists</h1>
+        <h1 id="event">Events lists</h1>
         <ul>
           <li>Event 1</li>
           <br />
@@ -108,9 +112,9 @@
         <!--this is the sixth item which holds the footer, just the boring stuff so to speak-->
         <div style="padding-top: 10px">
           <i class="fa-solid fa-hippo"></i>
-          - 2024 My Website
+          <i id="footer1"> - 2024 My Website</i>
         </div>
-        <p>Home > Section > Page</p>
+        <p id="footer2">Home > Section > Page</p>
         <p style="padding-right: 1vw">Email: info@example.com</p>
       </footer>
     </div>

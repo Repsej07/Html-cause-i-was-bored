@@ -44,6 +44,10 @@ a:hover {
 h1 {
   margin-left: 5px;
 }
+button{
+margin-left: 5px;
+
+}
 
 .item-3 {
   grid-area: main; /*this defines which area of the grid "item-3" will use*/
@@ -79,6 +83,7 @@ footer {
 
 i {
   padding: 1vw;
+  font-style: normal;
 }
 @media screen and (max-width: 615px) {
   /*this is the media query for the smoller devices*/
