@@ -1,20 +1,20 @@
 body {
   min-width: 199px;
-  overflow-y: hidden; /*this is the overflow for the y axis of the html*/
   margin: 0;
 }
 .container {
   /*this is the class for the main grid container*/
   padding: 1vh;
   display: grid; /*makes the container a grid*/
-  row-gap: 10px; /*sets the gap between the rows to 10px*/
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*sets the columns of the grid to 1fr 1fr 1fr 1fr 1fr*/
-  grid-template-rows: 8vh 80vh 8vh; /*sets the rows of the grid to 1cm 2fr 1cm*/
-  grid-template-areas:
-    "header header header header header" /*sets the areas of the grid to the following*/
-    "sidebar1 main main  main sidebar2" /*sets the areas of the grid to the following*/
-    "footer footer footer footer footer"; /*sets the areas of the grid to the following*/
-  font-size: 2vh; /*sets the font size of the container to 2vh*/
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8vh 80vh 8vh;
+    grid-template-areas:
+      "header header header header header"
+      "sidebar1 main main main sidebar2"
+      "footer footer footer footer footer";
+    font-size: 2vh; /*sets the font size of the container to 2vh*/
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -44,14 +44,8 @@ a:hover {
 h1 {
   margin-left: 5px;
 }
-button{
-margin-left: 5px;
-
-}
-
-.item-3 {
-  grid-area: main; /*this defines which area of the grid "item-3" will use*/
-  background-color: #e4e4e4; /*background color of the item*/
+button {
+  margin-left: 5px;
 }
 .item-2 {
   /*these are the different stylings i have used for item 2*/
@@ -62,11 +56,32 @@ margin-left: 5px;
 aside {
   background-color: #f4f4f4;
 }
+
+
 main {
+  grid-area: main;
   background-color: #f4f4f4;
-  margin-left: 1vw;
   margin-right: 1vw;
+  margin-left: 1vw;
+  position: relative; /* Ensures ::after is positioned relative to main */
 }
+
+main::after {
+  content: '';
+  position: absolute;
+  width: 103%;
+  height: 102%;
+  top: 0;
+  left: 0;
+  right: 0; /* Ensures the box fills the entire width */
+  bottom: 0; /* Ensures the box fills the entire height */
+  background-image: url(chroma.GIF);
+  background-size: cover;
+  z-index: -1; /* Place behind the main content */
+  left: -1.5vw;
+  top: -5px;
+}
+
 
 .item-4 {
   /*these are the different stylings i have used for item 4*/
@@ -85,6 +100,7 @@ i {
   padding: 1vw;
   font-style: normal;
 }
+
 @media screen and (max-width: 615px) {
   /*this is the media query for the smoller devices*/
   html {
