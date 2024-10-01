@@ -5,6 +5,7 @@ function langSwitch() {
     englishText();
   }
 }
+hi
 function dutchText() {
   lang.style.color = "red";
   lang.innerText = "Nederlands";
