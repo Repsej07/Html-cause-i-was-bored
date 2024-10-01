@@ -1,10 +1,10 @@
 <?php
-use Controllers\HomeController;
-use Controllers\AboutController;
-use Controllers\ContactController;
 include("Profile/controllers/HomeController.php");
 include("Profile/controllers/AboutController.php");
 include("Profile/controllers/ContactController.php");
+use Controllers\HomeController;
+use Controllers\AboutController;
+use Controllers\ContactController;
 
 switch ($_SERVER['REQUEST_URI']) {
     case '/about':
