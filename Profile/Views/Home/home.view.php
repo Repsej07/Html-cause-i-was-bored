@@ -30,7 +30,7 @@ require './Profile/Views/layOut/head.php';
       </aside>
         <main onmouseover="function1()" id="test1">
           <h1 id="main">Main content</h1>
-          <button onclick="test1()" id="test2">hi</button>
+          <button onclick="langSwitch()" id="test2">hi</button>
           <!--this is the third item in the grid which holds the main content window-->
           <p style="margin-left: 5px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut

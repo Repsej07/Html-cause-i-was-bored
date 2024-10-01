@@ -1,13 +1,23 @@
 <?php
+use Controllers\HomeController;
+use Controllers\AboutController;
+use Controllers\ContactController;
+include("Profile/controllers/HomeController.php");
+include("Profile/controllers/AboutController.php");
+include("Profile/controllers/ContactController.php");
+
 switch ($_SERVER['REQUEST_URI']) {
     case '/about':
-        require './Profile/Views/About/about.view.php';
+        $test = new AboutController();
+        $test->reroute('about');
         break;
     case '/contact':
-        require './Profile/Views/Contact/contact.view.php';
+        $test = new ContactController();
+        $test->reroute('contact');
         break;
     case '/':    
-        require './Profile/Views/Home/home.view.php';
+       $test = new HomeController();
+       $test->reroute('home');
         break;
 }  
 
