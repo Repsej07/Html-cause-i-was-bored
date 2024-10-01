@@ -1,40 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/8107febab7.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-    <!--in the head i have the normal viewport meta tag, the css stylesheet ofcourse, and a fontawesome script for the icons-->
-  </head>
-  <body>
-    <div class="container">
-      <!--this is the main grid container that holds all the items-->
+<?php 
+require './Profile/Views/layOut/head.php';
+?>
 
-      <header>
-        <!--this is the first item in the grid which hold the header and the nav-bar-->
-        <i class="fa-solid fa-cat"></i>
-        <div id="lang">English</div>
-        <nav>
-          <a
-            href="home.html"
-            style="
-              background-color: white;
-              color: black;
-              box-shadow: 1px 1px 1px 1px black;
-            "
-            >Home</a
-          >
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <button type="button" onclick="langSwitch()">switch language</button>
-        </nav>
-      </header>
-
-      <aside class="item-2">
+<aside class="item-2">
         <!--this is the second item in the grid which holds sidebar 1, so the sidebar on the left-->
         <h1>Menu</h1>
         <ul>
@@ -60,7 +28,7 @@
           <br />
         </ul>
       </aside>
-        <main>
+        <main onmouseover="function1()" id="test1">
           <h1 id="main">Main content</h1>
           <!--this is the third item in the grid which holds the main content window-->
           <p style="margin-left: 5px">
@@ -106,16 +74,6 @@
           <br />
         </ul>
       </aside>
-
-      <footer>
-        <!--this is the sixth item which holds the footer, just the boring stuff so to speak-->
-        <div style="padding-top: 10px">
-          <i class="fa-solid fa-hippo"></i>
-          <i id="footer1"> - 2024 My Website</i>
-        </div>
-        <p id="footer2">Home > Section > Page</p>
-        <p style="padding-right: 1vw">Email: info@example.com</p>
-      </footer>
-    </div>
-  </body>
-</html>
+<?php
+require'./Profile/Views/layOut/footer.php';
+?>

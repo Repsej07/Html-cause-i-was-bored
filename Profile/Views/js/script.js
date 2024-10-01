@@ -34,13 +34,10 @@ for (let i in hi1) {
 }
 
 function function1() {
-    document.querySelector("main").style.borderImage = "chroma.GIF"
-  }
-
-function function2(){
-  stop
-  document.querySelector("main").style.border = "none"
-
+    document.getElementById("test1").style.display = "block"
+}
+function page(destination){
+window.location.href = destination;
 
 }
 // function stopLight() {

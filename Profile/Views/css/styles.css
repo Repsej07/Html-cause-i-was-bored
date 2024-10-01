@@ -67,9 +67,10 @@ main {
 }
 
 main::after {
+  display: none;
   content: '';
   position: absolute;
-  width: 103%;
+  width: 102%;
   height: 102%;
   top: 0;
   left: 0;
@@ -78,7 +79,7 @@ main::after {
   background-image: url(chroma.GIF);
   background-size: cover;
   z-index: -1; /* Place behind the main content */
-  left: -1.5vw;
+  left: -1vh;
   top: -5px;
 }
 
