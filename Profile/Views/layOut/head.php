@@ -16,9 +16,9 @@
       <header>
         <!--this is the first item in the grid which hold the header and the nav-bar-->
         <i class="fa-solid fa-cat"></i>
-        <nav>
-          <a onclick="page('/')">Home</a>
-          <a onclick="page('/about')">About</a>
-          <a onclick="page('/contact')">Contact</a>
+        <nav id="navbar">
+        <a onclick="page('/',this)">Home</a>
+        <a onclick="page('/about',this)">About</a>
+          <a onclick="page('/contact',this)">Contact</a>
         </nav>
       </header>

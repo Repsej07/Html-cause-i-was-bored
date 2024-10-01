@@ -36,10 +36,23 @@ for (let i in hi1) {
 function function1() {
     document.getElementById("test1").style.display = "block"
 }
-function page(destination){
-window.location.href = destination;
-
+function page(destination, element){
+  element = element;
+  const navbarItems = document.querySelectorAll('#navbar a');
+  function toggleClass(element){
+    navbarItems.forEach(navItem => {
+      navItem.classList.remove("active");
+    });
+    element.classList.add('active');
+    console.log(element);
+    }
+    toggleClass(element);
+  window.location.href = destination;
+  
 }
+
+
+
 // function stopLight() {
 //   let r = Math.round(Math.random() * 255);
 //   let g = Math.round(Math.random() * 255);

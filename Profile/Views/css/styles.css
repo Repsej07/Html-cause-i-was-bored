@@ -1,6 +1,9 @@
+*
 body {
   min-width: 199px;
   margin: 0;
+  overflow: scroll;
+  
 }
 .container {
   /*this is the class for the main grid container*/
@@ -35,6 +38,12 @@ a {
   border-radius: 1px;
   text-decoration: none;
   color: white;
+}
+a:focus{
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 1px 1px black;
+
 }
 a:hover {
   background-color: white;
@@ -101,7 +110,11 @@ i {
   padding: 1vw;
   font-style: normal;
 }
-
+.active {
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 1px 1px black;
+}
 @media screen and (max-width: 615px) {
   /*this is the media query for the smoller devices*/
   html {
