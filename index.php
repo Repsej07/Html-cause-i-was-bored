@@ -1,16 +1,16 @@
 <?php
 require "./Profile/Views/front/front.view.php";
-include "(./Profile/controllers/controller.php)";
-use Controllers\Controller;
+include "(/Users/jespermeuzelaar/Html dag 1 retrial/Profile/controllers/MainController.php)";
+use Controllers\MainController;
 switch ($_SERVER['REQUEST_URI']) {
     case '/back':
-        $test = new Controller();
+        $test = new MainController();
         $test->reroute('back');
         break;
 
     default:
         '/';
-        $test = new Controller();
+        $test = new MainController();
         $test->reroute('front');
         break;
 }

@@ -1,4 +1,5 @@
 <?php
+namespace Profile\Controllers;
 class controller 
 {
     public function reroute($path)
