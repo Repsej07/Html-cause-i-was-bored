@@ -1,7 +1,6 @@
 <?php
 require "./Profile/Views/front/front.view.php";
 include "(/Users/jespermeuzelaar/Html dag 1 retrial/Profile/controllers/MainController.php)";
-use Controllers\MainController;
 switch ($_SERVER['REQUEST_URI']) {
     case '/back':
         $test = new MainController();
