@@ -1,6 +1,6 @@
 <?php
 require "./Profile/Views/front/front.view.php";
-include "./Profile/controllers/controller.php";
+include "(./Profile/controllers/controller.php)";
 use Controllers\Controller;
 switch ($_SERVER['REQUEST_URI']) {
     case '/back':
