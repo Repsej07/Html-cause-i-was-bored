@@ -1,7 +1,7 @@
 <?php
 require "./Profile/Views/front/front.view.php";
 include "./Profile/controllers/controller.php";
-use controller/controller;
+use Controllers\Controller;
 switch ($_SERVER['REQUEST_URI']) {
     case '/back':
         $test = new Controller();
