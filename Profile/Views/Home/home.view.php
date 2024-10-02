@@ -75,5 +75,5 @@ require './Profile/Views/layOut/head.php';
         </ul>
       </aside>
 <?php
-require'./Profile/Views/layOut/footer.php';
+require './Profile/Views/layOut/footer.php';
 ?>
