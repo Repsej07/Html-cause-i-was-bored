@@ -8,7 +8,7 @@ switch ($_SERVER['REQUEST_URI']) {
         break;
 
     default:
-        '/';
+        '/front';
         $test = new MainController();
         $test->reroute('front');
         break;

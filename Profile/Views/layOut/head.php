@@ -1,5 +1,5 @@
 <head>
-<link rel="stylesheet" href="../js/styles.css">
+<link rel="stylesheet" href="/Profile/Views/js/styles.css">
 
 </head>
 <header>

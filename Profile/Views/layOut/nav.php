@@ -1,4 +1,4 @@
 
-<a href="/Profile/Views/back/back.php">back.php</a>
+<a onclick="page('/back')" href="">back.php</a>
 
-<a href="/profile/views/front/front.view.php">front.php</a>
+<a onclick="page('/front')">front.php</button>
