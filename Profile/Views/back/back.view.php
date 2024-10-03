@@ -1,5 +1,5 @@
 <?php 
-require '../layOut/head.php';
+require './Profile/Views/layOut/head.php';
 ?>
 <h1>back of the page</h1>
 
