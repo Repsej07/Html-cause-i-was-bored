@@ -10,15 +10,15 @@
     ></script>
     <!--in the head i have the normal viewport meta tag, the css stylesheet ofcourse, and a fontawesome script for the icons-->
   </head>
-  <body  onload="active()">
+  <body>
     <div class="container">
       <!--this is the main grid container that holds all the items-->
 
       <header>
   <i class="fa-solid fa-cat"></i>
   <nav>
-    <a id="home" onclick="page('/', 'home')">Home</a>
-    <a id="about" onclick="page('/about', 'about')">About</a>
-    <a id="contact" onclick="page('/contact', 'contact')">Contact</a>
+    <a id="/" onclick="page('/')">Home</a>
+    <a id="/about" onclick="page('/about')">About</a>
+    <a id="/contact" onclick="page('/contact')">Contact</a>
   </nav>
 </header>
